@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Slides</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            margin: 50px;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Select Slides</h1>
+    <form action="/select_slides" method="post">
+        <label for="cover">Cover:</label>
+        <input type="checkbox" id="cover" name="slide1" value="g25f292d29b1_0_61">
+        <label for="introduction">Introduction:</label>
+        <input type="checkbox" id="introduction" name="slide2" value="g25f292d29b1_0_248">
+        <label for="exterior">Exterior:</label>
+        <input type="checkbox" id="exterior" name="slide3" value="g25f292d29b1_0_374">
+        <label for="cesped">Cesped:</label>
+        <input type="checkbox" id="cesped" name="slide4" value="g25f292d29b1_0_434">
+        <br><br>
+        <input type="submit" value="Create Presentation">
+    </form>
+</body>
+</html>
